@@ -1,0 +1,105 @@
+<div class="container">
+  <h2>employee</h2>
+  <form #form="ngForm" ngNativeValidate>
+    <div class="form-group">
+      <label for="fname">First Name </label>
+      <input id="fname" name="fname" class="form-control" [(ngModel)]="employee.fname" />
+
+      <label for="lname">Last Name </label>
+      <input id="lname" name="lname" class="form-control" [(ngModel)]="employee.lname"/>
+
+      <label for="email">Email </label>
+      <input id="email" name="email" class="form-control" [(ngModel)]="employee.email"/>
+
+
+      <label for="contact">Contact Number : </label>
+      <input id="contact" name="contact" class="form-control" [(ngModel)]="employee.contact"/>
+
+      <label for="add">Address </label>
+      <textarea id="add"  rows="2" cols="20" name="add" class="form-control" [(ngModel)]="employee.add">
+        </textarea>
+
+        <label for="unm">User Name </label>
+      <input id="unm" name="unm" class="form-control" [(ngModel)]="employee.unm"/>
+
+      <label for="pwd">Password </label>
+      <input id="pwd" name="pwd" class="form-control" type="password" [(ngModel)]="employee.pwd"/>
+      <br>
+
+
+      <h5>Gender</h5>
+<div class="form-group">
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" value="male" [(ngModel)]="employee.gender"/>
+        <label class="form-check-label" for="inlineRadio1">Male
+
+        </label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="gender" id="inlineRadio2" value="female" [(ngModel)]="employee.gender"/>
+        <label class="form-check-label" for="inlineRadio2">Female
+
+        </label>
+      </div>
+      </div>
+      <br>
+
+
+      <div class="form-group">
+        <label for="qualification">Qualification</label>
+        <select class="form-control" id="qualification" name="qualification" [(ngModel)]="employee.qualification">
+          <option>graduation</option>
+          <option>post graduation</option>
+          <option>12th pass</option>
+          <option>PHD</option>
+          <option>other</option>
+        </select>
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="experience">Experience</label>
+        <select class="form-control" id="experience" name="experience" [(ngModel)]="employee.experience">
+          <option>No</option>
+          <option>1 year</option>
+          <option>2 years</option>
+          <option>3 years</option>
+          <option>4 years</option>
+          <option>more</option>
+        </select>
+      </div>
+<br>
+      <h5>Coding Languages</h5>
+      <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="c" id="c" [(ngModel)]="employee.c" />
+      <label class="form-check-label" for="c">
+      C/C++
+      </label>
+    </div>
+
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="java" id="java" [(ngModel)]="employee.c" />
+      <label class="form-check-label" for="java">
+      Java
+      </label>
+    </div>
+
+      <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="php" id="php" [(ngModel)]="employee.c"/>
+      <label class="form-check-label" for="php">
+      PHP
+      </label>
+    </div>
+
+      <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="python" id="python" [(ngModel)]="employee.c" />
+      <label class="form-check-label" for="python">
+      Python
+      </label>
+    </div>
+    <br>
+
+  </div>
+      <button class="btn btn-primary">  Submit</button>
+  </form>
+
+
